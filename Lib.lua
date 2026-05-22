@@ -29,7 +29,7 @@ local tabIndex = 0
 local unloaded = false
 
 local assets = {
-	interFont = "rbxassetid://12187607287", --12187365364
+	interFont = "rbxassetid://12187365364", --12187365364
 	userInfoBlurred = "rbxassetid://18824089198",
 	toggleBackground = "rbxassetid://18772190202",
 	togglerHead = "rbxassetid://18772309008",
@@ -741,18 +741,18 @@ function MacLib:Window(Settings)
 
 	local moveIcon = Instance.new("ImageButton")
 	moveIcon.Name = "MoveIcon"
-	moveIcon.Image = assets.transform
-	moveIcon.ImageTransparency = 0.7
+	moveIcon.Image = "rbxassetid://10734900011"
+	moveIcon.ImageTransparency = 0.5
 	moveIcon.AnchorPoint = Vector2.new(1, 0.5)
 	moveIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	moveIcon.BackgroundTransparency = 1
 	moveIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	moveIcon.BorderSizePixel = 0
 	moveIcon.Position = UDim2.fromScale(1, 0.5)
-	moveIcon.Size = UDim2.fromOffset(17, 17)
+	moveIcon.Size = UDim2.fromOffset(15, 15)
 	moveIcon.Parent = elements
 	moveIcon.Visible = not Settings.DragStyle or Settings.DragStyle == 1
-
+	
 	local interact = Instance.new("TextButton")
 	interact.Name = "Interact"
 	interact.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
@@ -765,17 +765,17 @@ function MacLib:Window(Settings)
 	interact.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	interact.BorderSizePixel = 0
 	interact.Position = UDim2.fromScale(0.5, 0.5)
-	interact.Size = UDim2.fromOffset(40, 40)
+	interact.Size = UDim2.fromOffset(30, 30)
 	interact.Parent = moveIcon
 
 	local function ChangemoveIconState(State)
 		if State == "Default" then
 			Tween(moveIcon, TweenInfo.new(0.2, Enum.EasingStyle.Sine), {
-				ImageTransparency = 0.7
+				ImageTransparency = 0.5
 			}):Play()
 		elseif State == "Hover" then
 			Tween(moveIcon, TweenInfo.new(0.2, Enum.EasingStyle.Sine), {
-				ImageTransparency = 0.4
+				ImageTransparency = 0.2
 			}):Play()
 		end
 	end
