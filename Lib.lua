@@ -29,7 +29,7 @@ local tabIndex = 0
 local unloaded = false
 
 local assets = {
-	interFont = "rbxassetid://12187365364",
+	interFont = "rbxassetid://12187373592", --12187365364
 	userInfoBlurred = "rbxassetid://18824089198",
 	toggleBackground = "rbxassetid://18772190202",
 	togglerHead = "rbxassetid://18772309008",
@@ -749,7 +749,7 @@ function MacLib:Window(Settings)
 	moveIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	moveIcon.BorderSizePixel = 0
 	moveIcon.Position = UDim2.fromScale(1, 0.5)
-	moveIcon.Size = UDim2.fromOffset(15, 15)
+	moveIcon.Size = UDim2.fromOffset(17, 17)
 	moveIcon.Parent = elements
 	moveIcon.Visible = not Settings.DragStyle or Settings.DragStyle == 1
 
@@ -766,7 +766,7 @@ function MacLib:Window(Settings)
 	interact.BorderSizePixel = 0
 	interact.Position = UDim2.fromScale(0.5, 0.5)
 	interact.Size = UDim2.fromOffset(40, 40)
-	interact.Parent = moveIcon
+	interact.Parent = topbar --moveIcon
 
 	local function ChangemoveIconState(State)
 		if State == "Default" then
@@ -1436,7 +1436,7 @@ function MacLib:Window(Settings)
 				tabImage.BackgroundTransparency = 1
 				tabImage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				tabImage.BorderSizePixel = 0
-				tabImage.Size = UDim2.fromOffset(18, 18)
+				tabImage.Size = UDim2.fromOffset(17, 17)
 				tabImage.Parent = tabSwitcher
 			end
 
