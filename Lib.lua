@@ -29,7 +29,7 @@ local tabIndex = 0
 local unloaded = false
 
 local assets = {
-	interFont = "rbxassetid://12187373592", --12187365364
+	interFont = "rbxassetid://12187607287", --12187365364
 	userInfoBlurred = "rbxassetid://18824089198",
 	toggleBackground = "rbxassetid://18772190202",
 	togglerHead = "rbxassetid://18772309008",
@@ -766,7 +766,7 @@ function MacLib:Window(Settings)
 	interact.BorderSizePixel = 0
 	interact.Position = UDim2.fromScale(0.5, 0.5)
 	interact.Size = UDim2.fromOffset(40, 40)
-	interact.Parent = topbar --moveIcon
+	interact.Parent = moveIcon
 
 	local function ChangemoveIconState(State)
 		if State == "Default" then
