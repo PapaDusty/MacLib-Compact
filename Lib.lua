@@ -136,7 +136,7 @@ function MacLib:Window(Settings)
 	sidebar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	sidebar.BorderSizePixel = 0
 	sidebar.Position = UDim2.fromScale(-3.52e-08, 4.69e-08)
-	sidebar.Size = UDim2.fromScale(0.275, 1)
+	sidebar.Size = UDim2.fromScale(0.245, 1)
 
 	local divider = Instance.new("Frame")
 	divider.Name = "Divider"
@@ -749,7 +749,7 @@ function MacLib:Window(Settings)
 	moveIcon.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	moveIcon.BorderSizePixel = 0
 	moveIcon.Position = UDim2.fromScale(1, 0.5)
-	moveIcon.Size = UDim2.fromOffset(15, 15)
+	moveIcon.Size = UDim2.fromOffset(16, 16)
 	moveIcon.Parent = elements
 	moveIcon.Visible = not Settings.DragStyle or Settings.DragStyle == 1
 	
@@ -1466,7 +1466,7 @@ function MacLib:Window(Settings)
 
 			local tabSwitcherUIPadding = Instance.new("UIPadding")
 			tabSwitcherUIPadding.Name = "TabSwitcherUIPadding"
-			tabSwitcherUIPadding.PaddingLeft = UDim.new(0, 24)
+			tabSwitcherUIPadding.PaddingLeft = UDim.new(0, 18)
 			tabSwitcherUIPadding.PaddingRight = UDim.new(0, 35)
 			tabSwitcherUIPadding.PaddingTop = UDim.new(0, 1)
 			tabSwitcherUIPadding.Parent = tabSwitcher
@@ -1615,7 +1615,7 @@ function MacLib:Window(Settings)
 					buttonInteract.FontFace = Font.new(assets.interFont)
 					buttonInteract.RichText = true
 					buttonInteract.TextColor3 = Color3.fromRGB(255, 255, 255)
-					buttonInteract.TextSize = 13
+					buttonInteract.TextSize = 15
 					buttonInteract.TextTransparency = 0.5
 					buttonInteract.TextTruncate = Enum.TextTruncate.AtEnd
 					buttonInteract.TextXAlignment = Enum.TextXAlignment.Left
