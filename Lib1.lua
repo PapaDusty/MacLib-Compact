@@ -466,6 +466,17 @@ function MacLib:Window(Settings)
 	userInfo.Position = UDim2.new(0, -25, 1, 20)
 	userInfo.Size = UDim2.new(1, 0, 0, 107)
 
+	local divider5 = Instance.new("Frame")
+	divider5.Name = "Divider"
+	divider5.AnchorPoint = Vector2.new(0, 1)
+	divider5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	divider5.BackgroundTransparency = 0.9
+	divider5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	divider5.BorderSizePixel = 0
+	divider5.Position = UDim2.fromScale(0, 1)
+	divider5.Size = UDim2.new(1, 0, 0, 1)
+	divider5.Parent = userInfo
+
 	local informationGroup = Instance.new("Frame")
 	informationGroup.Name = "InformationGroup"
 	informationGroup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -477,7 +488,7 @@ function MacLib:Window(Settings)
 	local informationGroupUIPadding = Instance.new("UIPadding")
 	informationGroupUIPadding.Name = "InformationGroupUIPadding"
 	informationGroupUIPadding.PaddingBottom = UDim.new(0, 17)
-	informationGroupUIPadding.PaddingLeft = UDim.new(0, 25)
+	informationGroupUIPadding.PaddingLeft = UDim.new(0, 24)
 	informationGroupUIPadding.Parent = informationGroup
 
 	local informationGroupUIListLayout = Instance.new("UIListLayout")
@@ -656,7 +667,7 @@ function MacLib:Window(Settings)
 	local defaultSidebarWidth = sidebar.AbsoluteSize.X
 	local initialMouseX, initialSidebarWidth
 	local snapRange = 20
-	local minSidebarWidth = 107
+	local minSidebarWidth = 94
 	local maxSidebarWidth = base.AbsoluteSize.X - minSidebarWidth
 
 	local TweenSettings = {
@@ -2318,7 +2329,7 @@ function MacLib:Window(Settings)
 					binderBox.BorderSizePixel = 0
 					binderBox.ClipsDescendants = true
 					binderBox.LayoutOrder = 1
-					binderBox.Position = UDim2.fromScale(1, 0)
+					binderBox.Position = UDim2.fromScale(1, 0, 0, 20)
 					binderBox.Size = UDim2.fromOffset(21, 21)
 
 					local binderBoxUICorner = Instance.new("UICorner")
