@@ -473,7 +473,8 @@ function MacLib:Window(Settings)
 	divider5.BackgroundTransparency = 0.9
 	divider5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	divider5.BorderSizePixel = 0
-	divider5.Position = UDim2.fromScale(0, 1)
+	--divider5.Position = UDim2.fromScale(0, 1)
+	divider5.Position = UDim2.new(0, -25, 1, 20)
 	divider5.Size = UDim2.new(1, 0, 0, 1)
 	divider5.Parent = userInfo
 
