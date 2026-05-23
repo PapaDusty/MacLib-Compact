@@ -463,7 +463,7 @@ function MacLib:Window(Settings)
 	userInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	userInfo.BorderSizePixel = 0
     --userInfo.Position = UDim2.fromScale(0, 1)
-	userInfo.Position = UDim2.new(0, -10, 1, 10)
+	userInfo.Position = UDim2.new(0, -25, 1, 20)
 	userInfo.Size = UDim2.new(1, 0, 0, 107)
 
 	local informationGroup = Instance.new("Frame")
@@ -498,7 +498,8 @@ function MacLib:Window(Settings)
 	headshot.BackgroundTransparency = 1
 	headshot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	headshot.BorderSizePixel = 0
-	headshot.Size = UDim2.fromOffset(37, 37)
+	headshot.Position = UDim2.new(0, -25, 1, 20)
+	headshot.Size = UDim2.fromOffset(35, 35)
 	headshot.Image = (isReady and headshotImage) or "rbxassetid://0"
 
 	local uICorner3 = Instance.new("UICorner")
@@ -522,7 +523,7 @@ function MacLib:Window(Settings)
 	userAndDisplayFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	userAndDisplayFrame.BorderSizePixel = 0
 	userAndDisplayFrame.LayoutOrder = 1
-	userAndDisplayFrame.Size = UDim2.new(1, -42, 0, 32)
+	userAndDisplayFrame.Size = UDim2.new(1, -12, 0, 32)
 
 	local displayName = Instance.new("TextLabel")
 	displayName.Name = "DisplayName"
