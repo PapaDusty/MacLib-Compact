@@ -484,6 +484,7 @@ function MacLib:Window(Settings)
 	informationGroupUIListLayout.Name = "InformationGroupUIListLayout"
 	informationGroupUIListLayout.FillDirection = Enum.FillDirection.Horizontal
 	informationGroupUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	informationGroupUIListLayout.HorizontalAlignment = Enum.VerticalAlignment.Center
 	informationGroupUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 	informationGroupUIListLayout.Parent = informationGroup
 
@@ -534,7 +535,7 @@ function MacLib:Window(Settings)
 	)
 	displayName.Text = LocalPlayer.DisplayName
 	displayName.TextColor3 = Color3.fromRGB(255, 255, 255)
-	displayName.TextSize = 17
+	displayName.TextSize = 16
 	displayName.TextTransparency = 0.1
 	displayName.TextTruncate = Enum.TextTruncate.SplitWord
 	displayName.TextXAlignment = Enum.TextXAlignment.Left
@@ -568,7 +569,7 @@ function MacLib:Window(Settings)
 	)
 	username.Text = "@" .. LocalPlayer.Name
 	username.TextColor3 = Color3.fromRGB(255, 255, 255)
-	username.TextSize = 14
+	username.TextSize = 12
 	username.TextTransparency = 0.7
 	username.TextTruncate = Enum.TextTruncate.SplitWord
 	username.TextXAlignment = Enum.TextXAlignment.Left
@@ -1613,7 +1614,7 @@ function MacLib:Window(Settings)
 
 					local buttonInteract = Instance.new("TextButton")
 					buttonInteract.Name = "ButtonInteract"
-					buttonInteract.FontFace = Font.new(assets.interFont, Enum.FontWeight.SemiBold,Enum.FontStyle.Normal)
+					buttonInteract.FontFace = Font.new(assets.interFont)
 					buttonInteract.RichText = true
 					buttonInteract.TextColor3 = Color3.fromRGB(255, 255, 255)
 					buttonInteract.TextSize = 14
@@ -1711,7 +1712,7 @@ function MacLib:Window(Settings)
 					toggleName.Text = ToggleFunctions.Settings.Name
 					toggleName.RichText = true
 					toggleName.TextColor3 = Color3.fromRGB(255, 255, 255)
-					toggleName.TextSize = 13
+					toggleName.TextSize = 14
 					toggleName.TextTransparency = 0.5
 					toggleName.TextTruncate = Enum.TextTruncate.AtEnd
 					toggleName.TextXAlignment = Enum.TextXAlignment.Left
@@ -1850,7 +1851,7 @@ function MacLib:Window(Settings)
 					sliderName.Text = SliderFunctions.Settings.Name
 					sliderName.RichText = true
 					sliderName.TextColor3 = Color3.fromRGB(255, 255, 255)
-					sliderName.TextSize = 13
+					sliderName.TextSize = 14
 					sliderName.TextTransparency = 0.5
 					sliderName.TextTruncate = Enum.TextTruncate.AtEnd
 					sliderName.TextXAlignment = Enum.TextXAlignment.Left
@@ -2111,7 +2112,7 @@ function MacLib:Window(Settings)
 					inputName.Text = InputFunctions.Settings.Name
 					inputName.RichText = true
 					inputName.TextColor3 = Color3.fromRGB(255, 255, 255)
-					inputName.TextSize = 13
+					inputName.TextSize = 14
 					inputName.TextTransparency = 0.5
 					inputName.TextTruncate = Enum.TextTruncate.AtEnd
 					inputName.TextXAlignment = Enum.TextXAlignment.Left
@@ -2287,7 +2288,7 @@ function MacLib:Window(Settings)
 					keybindName.Text = KeybindFunctions.Settings.Name
 					keybindName.RichText = true
 					keybindName.TextColor3 = Color3.fromRGB(255, 255, 255)
-					keybindName.TextSize = 13
+					keybindName.TextSize = 14
 					keybindName.TextTransparency = 0.5
 					keybindName.TextTruncate = Enum.TextTruncate.AtEnd
 					keybindName.TextXAlignment = Enum.TextXAlignment.Left
@@ -2318,7 +2319,7 @@ function MacLib:Window(Settings)
 					binderBox.BorderSizePixel = 0
 					binderBox.ClipsDescendants = true
 					binderBox.LayoutOrder = 1
-					binderBox.Position = UDim2.fromScale(1, 0.5)
+					binderBox.Position = UDim2.fromScale(1, 0)
 					binderBox.Size = UDim2.fromOffset(21, 21)
 
 					local binderBoxUICorner = Instance.new("UICorner")
