@@ -485,7 +485,7 @@ function MacLib:Window(Settings)
 	informationGroupUIListLayout.FillDirection = Enum.FillDirection.Horizontal
 	informationGroupUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 	informationGroupUIListLayout.HorizontalAlignment = Enum.VerticalAlignment.Center
-	informationGroupUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+	--informationGroupUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 	informationGroupUIListLayout.Parent = informationGroup
 
 	local userId = LocalPlayer.UserId
