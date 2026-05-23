@@ -1613,10 +1613,10 @@ function MacLib:Window(Settings)
 
 					local buttonInteract = Instance.new("TextButton")
 					buttonInteract.Name = "ButtonInteract"
-					buttonInteract.FontFace = Font.new(assets.interFont)
+					buttonInteract.FontFace = Font.new(assets.interFont, Enum.FontWeight.SemiBold,Enum.FontStyle.Normal)
 					buttonInteract.RichText = true
 					buttonInteract.TextColor3 = Color3.fromRGB(255, 255, 255)
-					buttonInteract.TextSize = 15
+					buttonInteract.TextSize = 14
 					buttonInteract.TextTransparency = 0.5
 					buttonInteract.TextTruncate = Enum.TextTruncate.AtEnd
 					buttonInteract.TextXAlignment = Enum.TextXAlignment.Left
